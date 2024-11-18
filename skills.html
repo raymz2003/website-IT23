@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RAIME's portfolio website showcasing services, skills, education, experience, and contact details.">
+    <meta name="stylesheets" href="style.css"> <!-- Corrected stylesheet link -->
+    <title>Skills - RAIME</title>
+
+    <!-- External CSS (for styling) -->
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('https://as2.ftcdn.net/v2/jpg/05/63/10/09/1000_F_563100976_FGxK7iI0jqVafQRBs4TK0AWeKO5S2VOW.jpg') no-repeat center center fixed; /* Set your background image here */
+            background-size: cover; /* Makes sure the image covers the whole page */
+            color: #333;
+            min-height: 100vh; /* Ensures the background image covers the full viewport height */
+        }
+
+        /* Header Styling */
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Slight transparency to overlay the background */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        /* About Section */
+        .about-section {
+            background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
+            margin: 30px auto;
+            padding: 30px;
+            width: 80%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-section h2 {
+            text-align: center;
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .skills-section h3 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .skill-item {
+            background-color: #444;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* Home Button Styling */
+        .home-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .home-btn:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- You can add logo or navigation here -->
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h2>About ME</h2>
+        <p>Hello, my name is RAIME. I'm a passionate web developer with a focus on front-end technologies. I enjoy creating intuitive and responsive websites, and I am always looking to improve my skills and learn new technologies. I believe in the power of simplicity and strive to design clean, user-friendly experiences. I have worked on several projects ranging from personal portfolios to small business websites, and I am excited to continue growing in this field.</p>
+    </section>
+
+    <!-- Home Button -->
+    <button class="home-btn" onclick="window.location.href='index.html';">Back to Home</button>
+
+</body>
+</html>

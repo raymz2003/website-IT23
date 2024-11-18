@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RAIME's portfolio website showcasing services, skills, education, experience, and contact details.">
+    <title>Portfolio Website</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css"> <!-- Assuming external CSS file -->
+
+    <!-- Font Awesome CDN for social media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('https://as2.ftcdn.net/v2/jpg/05/63/10/09/1000_F_563100976_FGxK7iI0jqVafQRBs4TK0AWeKO5S2VOW.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        header nav a.active {
+            color: #f39c12;
+        }
+
+        /* Sections Styling */
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .skill-list, .service-list, .experience-list, .education-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .skill-item, .service-item, .experience-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            width: 250px;
+            text-align: left;
+        }
+
+        .skill-item h3, .service-item h3, .experience-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #e67e22;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">RAIME</a>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="RAIME's photo">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>RAIME</span></h1>
+            <h3 class="typing-test">I'm a <span></span></h3

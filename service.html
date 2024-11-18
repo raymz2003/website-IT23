@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RAIME's portfolio website showcasing services, skills, education, experience, and contact details.">
+    <meta name="stylesheets" href="style ccs"> <!-- This is not correct -->
+
+    <title>Services</title>
+
+    <!-- External CSS -->
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('https://as2.ftcdn.net/v2/jpg/05/63/10/09/1000_F_563100976_FGxK7iI0jqVafQRBs4TK0AWeKO5S2VOW.jpg') no-repeat center center fixed; /* Set your background image here */
+            background-size: cover; /* Makes sure the image covers the whole page */
+            color: #333;
+            min-height: 100vh; /* Ensures the background image covers the full viewport height */
+        }
+
+        /* Header Styling */
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Slight transparency to overlay the background */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        header nav a.active {
+            color: #f39c12;
+        }
+
+        /* Services Section */
+        .services {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            padding: 0 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .services-content {
+            max-width: 800px;
+            margin-left: 30px;
+            color: white;
+        }
+
+        .services-content h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .services-content h1 span {
+            color: #f39c12;
+        }
+
+        .services-list {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .service-item {
+            background-color: rgba(0, 0, 0, 0.7); /* Dark background for each service */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .service-item h3 {
+            font-size: 24px;
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+
+        .service-item p {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        /* Button Styling */
+        .back-home-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .back-home-btn:hover {
+            background-color: #e67e22;
+        }
+
+        /* Social Icons Section */
+        .social-icon {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .social-icon a {
+            color: #fff;
+            font-size: 30px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-icon a:hover {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <!-- You can add logo or navigation here -->
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="services-content">
+            <h1>Services</h1>
+            <p>Here are the services I offer to help you achieve your goals:</p>
+
+            <!-- Services List -->
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Web Development</h3>
+                    <p>I build responsive, user-friendly websites using the latest technologies, including HTML, CSS, JavaScript, and backend frameworks like Node.js.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>UI/UX Design</h3>
+                    <p>I create intuitive and beautiful designs that focus on user experience, ensuring the interface is both functional and aesthetically pleasing.</p>
+                </div>
+                <!-- Add more services here -->
+            </div>
+
+            <!-- Button to go back to Home page -->
+            <button class="back-home-btn" onclick="window.location.href='index.html';">Back to Home</button>
+        </div>
+    </section>
+
+    <!-- Social Media Icons Section -->
+    <div class="social-icon">
+        <!-- Add social media links here -->
+    </div>
+</body>
+</html>

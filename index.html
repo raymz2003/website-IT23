@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RAIME's portfolio website showcasing services, skills, education, experience, and contact details.">
+    <meta name="stylesheets" href="style ccs"> <!-- This is not correct -->
+
+    <title>Portfolio Website</title>
+
+    <!-- External CSS -->
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('https://as2.ftcdn.net/v2/jpg/05/63/10/09/1000_F_563100976_FGxK7iI0jqVafQRBs4TK0AWeKO5S2VOW.jpg') no-repeat center center fixed; /* Set your background image here */
+            background-size: cover; /* Makes sure the image covers the whole page */
+            color: #333;
+            min-height: 100vh; /* Ensures the background image covers the full viewport height */
+        }
+
+        /* Header Styling */
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Slight transparency to overlay the background */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        header nav a.active {
+            color: #f39c12;
+        }
+
+        /* Home Section */
+        .home {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            padding: 0 20px;
+            background-image: url('your-background-image.jpg'); /* Optional: If you want a different image for the home section */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .home-img img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+
+        .home-content {
+            max-width: 600px;
+            margin-left: 30px;
+            color: #fff; /* Text color to contrast with the dark background */
+        }
+
+        .home-content h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .home-content h1 span {
+            color: #f39c12;
+        }
+
+        .home-content .typing-test {
+            font-size: 24px;
+            color: #fff;
+            margin: 20px 0;
+        }
+
+        .social-icon {
+            margin: 20px 0;
+        }
+
+        .social-icon a {
+            color: #fff;
+            font-size: 30px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-icon a:hover {
+            color: #f39c12;
+        }
+
+        .btn {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">RAIME</a>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="service.html">Service</a>
+             <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>RAIME</span></h1>
+            <h3 class="typing-test">I'm a <span></span></h3>
+            <div class="social-icon">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <!-- Optional: JavaScript for typing effect -->
+    <script>
+        // Typing effect JavaScript
+        const text = ["Developer", "Designer", "Creator"]; // Add your text here
+        let i = 0;
+        let currentText = "";
+        let typingSpeed = 150; // Adjust typing speed
+        let isDeleting = false;
+
+        function type() {
+            const typingElement = document.querySelector('.typing-test span');
+            
+            if (isDeleting) {
+                currentText = text[i].substring(0, currentText.length - 1);
+            } else {
+                currentText = text[i].substring(0, currentText.length + 1);
+            }
+            
+            typingElement.textContent = currentText;
+
+            if (!isDeleting && currentText === text[i]) {
+                setTimeout(() => { isDeleting = true; }, 1000); // Pause before deleting
+            } else if (isDeleting && currentText === "") {
+                isDeleting = false;
+                i = (i + 1) % text.length; // Cycle through the words
+            }
+
+            setTimeout(type, typingSpeed);
+        }
+
+        // Start typing effect when the page loads
+        window.onload = () => {
+            type();
+        };
+    </script>
+</body>
+</html>
